@@ -41,4 +41,19 @@ What's next:
     View a summary of image vulnerabilities and recommendations → docker scout quickview 
 $
 ```
+
+#### Docker run:
+
+```
+$ docker run -d --name python-helloworld -p 8082:8080 python-helloworld
+ca2d513382bfccb044ce990555dc6dc1bb93c425dddd0a67d03956a39e1aaa72
+$
+$ docker ps
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                    NAMES
+ca2d513382bf   python-helloworld       "python /src/server.…"   18 seconds ago   Up 18 seconds   0.0.0.0:8082->8080/tcp   python-helloworld
+284f8f50d24a   nodejs-helloworld       "docker-entrypoint.s…"   17 minutes ago   Up 17 minutes   0.0.0.0:8081->8080/tcp   nodejs-helloworld
+82c1d53a9ae7   apache-php-helloworld   "docker-php-entrypoi…"   28 minutes ago   Up 28 minutes   0.0.0.0:8080->80/tcp     apache-php-helloworld
+$
+```
+
 ![image](img.png)
