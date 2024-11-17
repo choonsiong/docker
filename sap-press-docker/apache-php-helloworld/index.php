@@ -11,6 +11,7 @@
     $load = sys_getloadavg();
     ?>
     Date: <?php echo date("c"); ?><br/>
-    Server utilization (load): <?php echo $load[0]; ?>
+    Server utilization (load): <?php echo $load[0]; ?><br/>
+    Default time zone: <?php echo date_default_timezone_get(); ?>
 </body>
 </html>
