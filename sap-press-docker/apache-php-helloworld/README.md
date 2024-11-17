@@ -22,3 +22,15 @@ View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux
 What's next:
     View a summary of image vulnerabilities and recommendations → docker scout quickview 
 ```
+
+#### docker run:
+
+```
+$ docker run -d --name apache-php-helloworld -p 8080:80 apache-php-helloworld
+70966b8732516bcc9bffb4a8bdd1ad3067e71425a3c04eae7c0c1299501a73a2
+$
+$ docker ps
+CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                  NAMES
+70966b873251   apache-php-helloworld   "docker-php-entrypoi…"   3 minutes ago   Up 3 minutes   0.0.0.0:8080->80/tcp   apache-php-helloworld
+$
+```
