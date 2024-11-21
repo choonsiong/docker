@@ -5,7 +5,7 @@ LABEL description "A simple web server"
 
 # Set environment variables and timezone
 # (saves interactive queries)
-ENV TZ="Asia/Tokyo" \
+ENV TIMEZONE="Asia/Tokyo" \
     APACHE_RUN_USER=www-data \
     APACHE_RUN_GROUP=www-data \
     APACHE_LOG_DIR=/var/log/apache2
@@ -14,7 +14,7 @@ ENV TZ="Asia/Tokyo" \
 # package cache immediately, enable HTTPS
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo $TZ > /etc/timezone && \
-    apt-get upate && \
+    apt-get update && \
     apt-get install -y apache2 && \
     apt-get -y clean && \
     rm -r /var/cache/apt /var/lib/apt/lists/* && \
@@ -23,6 +23,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 
 # Release ports 80 and 443
 EXPOSE 80 443
+
+# Volumes available for local mount
+VOLUME [ "/var/www/html", "/var/log/apache2" ]
 
 # Copy entire content of project directory samplesite
 # to /var/www/html
