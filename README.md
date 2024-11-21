@@ -1,6 +1,10 @@
 # [Docker](https://www.docker.com)
 
 - [docs.docker.com](https://docs.docker.com)
+    - [Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
+    - [docker build](https://docs.docker.com/build/)
+        - [building best practices](https://docs.docker.com/build/building/best-practices/)
+    - [docker buildx](https://docs.docker.com/reference/cli/docker/buildx/)
 - [hub.docker.com](https://hub.docker.com)
 - [github/docker](https://github.com/docker)
     - [docker/buildx](https://github.com/docker/buildx)
