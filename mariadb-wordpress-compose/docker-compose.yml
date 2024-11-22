@@ -28,3 +28,5 @@ services:
 volumes:
   vol-db:
   vol-www:
+
+  # Run docker compose up -d (-d is running as a background process)
