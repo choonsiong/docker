@@ -24,3 +24,10 @@
 - [Amazon Container Registry](https://aws.amazon.com/de/ecr/)
 - [Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/)
 - [Red Hat Container](https://catalog.redhat.com/software/containers/explore)
+
+## Helps
+
+- Multi-platform builds
+    - [docker/buildx](https://github.com/docker/buildx)
+    - [Multi-platform builds](https://docs.docker.com/build/building/multi-platform/)
+    - [Multi-arch build and images, the simple way](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/)
