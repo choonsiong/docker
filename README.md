@@ -12,6 +12,7 @@
 - [github/docker](https://github.com/docker)
     - [docker/buildx](https://github.com/docker/buildx)
 - [Open Container Initiative](https://opencontainers.org/)
+- [circleci.com](https://circleci.com/developer/)
 - [portainer.io](https://www.portainer.io)
 
 ### Docker hub
