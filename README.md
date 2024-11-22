@@ -5,6 +5,7 @@
     - [docker build](https://docs.docker.com/build/)
         - [building best practices](https://docs.docker.com/build/building/best-practices/)
     - [docker buildx](https://docs.docker.com/reference/cli/docker/buildx/)
+    - [docker compose file reference](https://docs.docker.com/reference/compose-file/)
 - [hub.docker.com](https://hub.docker.com)
 - [github/docker](https://github.com/docker)
     - [docker/buildx](https://github.com/docker/buildx)
