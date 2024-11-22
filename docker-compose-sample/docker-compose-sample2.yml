@@ -17,8 +17,19 @@ services:
     expose: # Only visible within the network created by docker compose / docker stack deploy
       - "7500"
       - "7501"
+    volumes:
+      - /data/db:/var/lib/mysql # /data/db must exists before docker compose run
+      - ../data/db:/var/lib/mysql # Using relative path (relative to the docker-compose.yml file)
+      - /data/db:/var/lib/mysql:z # Fedora/RHEL
+  nginx:
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - webdata:/var/www/html
 
 networks:
   my-net:
     external:
       name: host
+
+volumes:
+  webdata: # named volume
