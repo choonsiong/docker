@@ -17,3 +17,8 @@
 ### Docker hub
 - [centos](https://hub.docker.com/_/centos)
 - [redhat/ubi9](https://hub.docker.com/r/redhat/ubi9)
+
+### Docker Register
+- [Amazon Container Registry](https://aws.amazon.com/de/ecr/)
+- [Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/)
+- [Red Hat Container](https://catalog.redhat.com/software/containers/explore)
