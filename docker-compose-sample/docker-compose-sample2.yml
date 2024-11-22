@@ -25,6 +25,15 @@ services:
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
       - webdata:/var/www/html
+  servicename6:
+    - environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_NAME: wordpressdb
+    - environment:
+      - WORDPRESS_DB_HOST=mariadb
+      - WORDPRESS_DB_NAME=wordpressdb
+    - environment:
+      env_file: filename
 
 networks:
   my-net:
